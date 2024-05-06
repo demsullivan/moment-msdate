@@ -5,7 +5,7 @@ declare module 'moment' {
     toOADate(): number
   }
 
-  const fromOADate = (oaDate: number, offset: number | string): Moment => {}
+  const fromOADate = (oaDate: number, offset?: number | string): Moment => {}
 }
 
 export = moment
