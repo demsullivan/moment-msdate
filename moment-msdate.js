@@ -14,6 +14,10 @@
 	var DAY_MILLISECONDS = 86400000;
 	var MS_DAY_OFFSET = 25569;
 
+	if (moment.__esModule) {
+		moment = moment.default
+	}
+	
 	const momentVersion = moment.version.split('.');
 	const major = +momentVersion[0];
 	const minor = +momentVersion[1];
